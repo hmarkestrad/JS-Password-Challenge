@@ -214,6 +214,8 @@ header {
 .modal-content, 
 .modal-header h2 p {
   line-height: 0em;
+  min-height: 500px;
+
 }
 
 .modal-header {
@@ -392,3 +394,9 @@ input[type="checkbox"]:disabled {
   cursor: not-allowed;
 }
 
+#myModalMessageRED {
+  display: none;
+  color: red;
+  font-family: 'arsenalbold';
+
+}

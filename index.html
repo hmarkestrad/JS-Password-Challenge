@@ -47,7 +47,8 @@
       <div class="modal-header">
         <span class="close">&times;</span>
         <h2>Select Password Criteria</h2>
-        <p>You must select at least one password feature</p>
+        <p id="myModalMessage">You must select at least one password feature</p>
+        <p id="myModalMessageRED">You must select at least one password feature</p>
       </div>
 
       <div class="modal-body">
@@ -75,28 +76,21 @@
 
             <span id="step_03">
               <label class="form-control">
-              <input type="checkbox" name="letters" />
-              Allow Letters
+              <input type="checkbox" id="symbols" />
+              Allow Special Character & Symbols
               </label>
             </span>
 
             <span id="step_04">
               <label class="form-control">
-              <input type="checkbox" name="symbols" />
-              Allow Special Character & Symbols
+              <input type="checkbox" id="upper" />
+              Use Upper Case
               </label>
             </span>
 
             <span id="step_05">
               <label class="form-control">
-              <input type="checkbox" name="upper" />
-              Use Upper Case
-              </label>
-            </span>
-
-            <span id="step_06">
-              <label class="form-control">
-              <input type="checkbox" name="lower" />
+              <input type="checkbox" id="lower" />
               Use Lower Case
               </label>
             </span>
