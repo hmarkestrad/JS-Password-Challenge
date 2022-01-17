@@ -4,9 +4,9 @@
   box-sizing: border-box; 
 }
 
-html { font-size: 100%; // this is usually 16px by default }
-body { font-size: 0.75em; // 12px }
-h1 { font-size: 2em; // 24px }
+html { font-size: 75%; // 12px }
+body { font-size: 1rem; // 12px }
+li { font-size: 0.833rem; // 10px }
 
 html,
 body,
@@ -34,6 +34,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* UI Placard Card */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 16px;
@@ -43,6 +44,7 @@ header {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
+  width: clamp(300px, 50vw, 600px);
   padding: 30px 40px;
 }
 
@@ -74,7 +76,7 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
-  width: 60%;
+  width: 70%;
 
 }
 
@@ -116,8 +118,6 @@ header {
   background-color: rgb(2, 110, 199);
 }
 
-
-
 .float-right {
   float: right;
 }
@@ -141,24 +141,6 @@ header {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
-}
-
-@media (max-width: 690px) {
-  .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
-  }
-
-  #password {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
-  }
 }
 
 .modal {
@@ -190,22 +172,11 @@ header {
   animation-duration: 0.4s
 }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
 /* The Close Button */
 .close {
   color: rgb(0, 0, 0);
   float: right;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .close:hover,
@@ -225,7 +196,7 @@ header {
 .modal-header {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  padding: 20px 40px;
+  padding: 20px 30px;
   color: rgb(0, 0, 0);
   height: 20%;
 }
@@ -402,5 +373,4 @@ input[type="checkbox"]:disabled {
   display: none;
   color: red;
   font-family: 'arsenalbold';
-
 }
