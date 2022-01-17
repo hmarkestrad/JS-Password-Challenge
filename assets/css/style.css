@@ -4,6 +4,10 @@
   box-sizing: border-box; 
 }
 
+html { font-size: 100%; // this is usually 16px by default }
+body { font-size: 0.75em; // 12px }
+h1 { font-size: 2em; // 24px }
+
 html,
 body,
 .wrapper {
