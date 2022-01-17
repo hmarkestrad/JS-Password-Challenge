@@ -31,8 +31,8 @@ This site was developed using the following technologies:
 * JS (JavaScript)  
 ## Website  
 The site can be accessed at the following hyperlink:  
-https://hmarkestrad.github.io/Portfolio_Challenge/  
+https://github.com/hmarkestrad/JS-Password-Challenge.git
 ## Screenshot:  
-![PORTFOLIO CHALLENGE - ESTRADA](https://github.com/hmarkestrad/Portfolio_Challenge/blob/main/images/Screenshot.jpg)  
+![PORTFOLIO CHALLENGE - ESTRADA](https://github.com/hmarkestrad/JS-Password-Challenge/blob/25c41b57f4065089e02cbec6e1479cc1dfab36e7/assets/images/Screen-Shot.png)  
 ## Contribution  
 Made by Hector Mark Estrada • 01-18-2022  
