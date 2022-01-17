@@ -1,34 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+      <title>Password Generator</title>
+      
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      
+      <link rel="stylesheet" href="./Assets/css/style_font.css">
+      <link rel="stylesheet" href="./Assets/css/style.css">
+      
+      <script src="./Assets/script.js"></script>
+
+</head>
+<html>
+<body>
     <div class="wrapper">
-      <header>
-        <h1>The Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+        <header>
+          <h1>The Password Generator</h1>
+        </header>
+        <div class="card">
+          <div class="card-header">
+            <h2>Generate a Password</h2>
+          </div>
+          <div class="card-body">
+            <textarea name="placeholder" readonly id="password" placeholder="Your Secure Password" 
+              aria-label="Generated Password"
+            ></textarea>
+          </div>
+          <div class="card-footer">
+            <button id="FeatureSelection" class="btn">Start Password Generation</button>
+            <a href="javascript:window.location.reload(true)">
+              <button id="SelectionReset" class="btn-complete" onmouseover="this.innerHTML='Reset Generator';" 
+              onmouseout="this.innerHTML='Password Generated';">Password Generated
+              </button>
+            </a>
+          </div>
         </div>
       </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Select Password Criteria</h2>
+        <p>You must select at least one password feature</p>
+      </div>
+
+      <div class="modal-body">
+        
+            <label for="length">Select Password Length<br></label>
+            <select id="step_01" name="length">
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="18">20</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+                <option value="64">64</option>
+                <option value="128">128</option>
+            </select>
+            <br>
+            <span id="step_02">
+              <label class="form-control">
+              <input type="checkbox" id="numbers" />
+              Allow Numbers
+              </label>
+            </span>
+
+            <span id="step_03">
+              <label class="form-control">
+              <input type="checkbox" name="letters" />
+              Allow Letters
+              </label>
+            </span>
+
+            <span id="step_04">
+              <label class="form-control">
+              <input type="checkbox" name="symbols" />
+              Allow Special Character & Symbols
+              </label>
+            </span>
+
+            <span id="step_05">
+              <label class="form-control">
+              <input type="checkbox" name="upper" />
+              Use Upper Case
+              </label>
+            </span>
+
+            <span id="step_06">
+              <label class="form-control">
+              <input type="checkbox" name="lower" />
+              Use Lower Case
+              </label>
+            </span>
+      </div>
+
+      <div class="modal-footer">
+        <button id="next" class="btn-next">Next</button>
+        <button id="submit" class="btn-submit">Submit</button>
+      </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  
+</div>
+    <script src="./Assets/javascript/script.js"></script>
+</body>
 </html>
