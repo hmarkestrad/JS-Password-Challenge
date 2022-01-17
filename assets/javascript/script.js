@@ -13,7 +13,7 @@ var step_05 = document.getElementById("step_05");
 var next = document.getElementById("next");
 var FeatureSelection = document.getElementById("FeatureSelection");
 var SelectionReset = document.getElementById("SelectionReset");
-var submit = document.getElementById("submit");
+var submit = document.getElementById("submit"); 
 let step = 0;
 
 // When the user clicks the button, open the modal 
