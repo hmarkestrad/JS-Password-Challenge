@@ -30,7 +30,6 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
 
@@ -186,26 +185,40 @@ header {
   cursor: pointer;
 }
 
-.modal-content, 
-.modal-header h2 p {
-  line-height: 0em;
+.modal-content {
   min-height: 500px;
+}
+
+.modal-header h2 {
+  font-family: arsenalregular;
+  font-size: 1.9rem;
+  line-height: 1.0rem;
+  margin-bottom: 8px;
+}
+
+.modal-header p {
+  font-size: 1.4rem;
+  line-height: 1.rem;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  color: rgb(99, 99, 99);
 
 }
 
 .modal-header {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  padding: 20px 30px;
+  border-bottom: 1px solid rgb(137, 137, 137);
+  padding: 24px 30px;
   color: rgb(0, 0, 0);
   height: 20%;
 }
 
 .modal-body {
   height: 60%;
-  padding: 0px 40px;
+  padding: 20px 40px;
   font-size: 1.5em;
-  line-height: 1.25em;
+  line-height: 1.5em;
 }
 
 .modal-footer {
